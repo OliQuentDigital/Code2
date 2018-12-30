@@ -1,15 +1,8 @@
-<div>
-    <div>
-        <section>
-            <video autoplay loop muted poster="../images/poster.jpg" >
-                <source src="videos/stvictoire.mp4">
-            </video>
 
-        </section>
-    </div>
-</div>
+    <video id="introvideo" autoplay loop muted poster="images/poster.jpg" >
+        <source src="video/stvictoire.mp4">
+    </video>
 
-<a href="#pane-second">
     <ol class="carousel-indicators">
         <div class="mouse_scroll">
 
@@ -24,4 +17,3 @@
         </div>
     </ol>
 
-</a>

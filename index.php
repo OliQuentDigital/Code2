@@ -16,20 +16,30 @@
 
     <?php require "includes/menu.php"  ?>
 
-    <?php require "includes/intro.php"  ?>
+    <section id="video-container">
 
+        <?php require "includes/intro.php"  ?>
 
-    <br><br><br><br>
-    <section class="mbr-section mbr-section-nopadding" data-rv-view="18">
-        <div class="map">
-            <iframe frameborder="0" style="border:0"
-                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0Dx_boXQiwvdz8sJHoYeZNVTdoWONYkU&amp;q=place_id:ChIJg65xx8SayRIRcQTXdhGLLBg"
-                    allowfullscreen=""></iframe>
-        </div>
     </section>
 
+    <section class="mbr-section mbr-section-small" id="msg-box1-1z" data-rv-view="15"
+             style="background-color: rgb(255, 248, 224); padding-top: 0rem; padding-bottom: 1.5rem;">
 
-    <?php require "includes/footer.php" ?>
+        <?php require "includes/accroche.php" ?>
+
+    </section>
+
+    <section class="mbr-section mbr-section-nopadding" data-rv-view="18">
+
+        <?php require "includes/introgoogle.php"; ?>
+
+    </section>
+
+    <footer>
+
+        <?php require "includes/footer.php" ?>
+
+    </footer>
 
     <?php require "includes/foot.php" ?>
 

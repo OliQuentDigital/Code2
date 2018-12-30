@@ -8,9 +8,108 @@
 
 }
 
+.mbr-section {
+    position: relative;
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+
+.mbr-section-full {
+    display: table;
+    width: 100%;
+    height: 100vh;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.mbr-section-small {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+}
+
 .mbr-section-nopadding {
     padding-top: 0;
     padding-bottom: 0;
+}
+
+.mbr-section-title {
+    margin-top: 0;
+}
+
+.mbr-table {
+    display: table;
+}
+
+.mbr-table-cell {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+}
+
+.mbr-table-cell-lg {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    padding-top: 0;
+    padding-bottom: 0;
+    float: none;
+}
+
+@media (max-width: 991px) {
+    .mbr-table-cell-lg {
+        display: block;
+    }
+}
+
+.mbr-inner-padding {
+    padding: 4rem;
+}
+
+/* footer */
+.mbr-footer {
+    color: #fff;
+}
+
+.mbr-footer .mbr-map,
+.mbr-footer .mbr-google-map {
+    height: 300px;
+}
+
+.mbr-footer .form-control {
+    color: #fff;
+    background-color: #26272c;
+    border-color: #1b1c20;
+}
+
+.mbr-footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.mbr-footer ul li {
+    position: relative;
+    padding-left: 1.2rem;
+}
+
+.mbr-footer ul li:before {
+    content: '';
+    position: absolute;
+    margin-left: -1.2rem;
+    width: 10px;
+    height: 1px;
+    top: 50%;
+    background-color: #fff;
+}
+
+footer.mbr-footer {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
 }
 
 /**********************************
@@ -37,7 +136,8 @@ html {
 }
 
 #introvideo {
-    filter: blur(5px) brightness(80%);
+    -webkit-filter: blur(5px) brightness(80%);
+            filter: blur(5px) brightness(80%);
     position: fixed;
     right: 0;
     bottom: 0;
@@ -45,7 +145,6 @@ html {
     min-height: 100%;
     width: auto;
     height: auto;
-    z-index: -100;
 }
 
 .logo {
@@ -127,7 +226,6 @@ Mouse SCROLL ANIMATION
     position: relative;
 
     border: 2px solid #ffffff;
-    -webkit-border-radius: 8px;
     border-radius: 8px;
 
 }
@@ -153,51 +251,7 @@ Mouse SCROLL ANIMATION
     }
 }
 
-@-moz-keyframes mouse-wheel {
-    0% {
-        top: 1px;
-    }
-    25% {
-        top: 2px;
-    }
-    50% {
-        top: 3px;
-    }
-    75% {
-        top: 2px;
-    }
-    100% {
-        top: 1px;
-    }
-}
-
 @-webkit-keyframes mouse-scroll {
-
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: .5;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@-moz-keyframes mouse-scroll {
-
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: .5;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@-o-keyframes mouse-scroll {
 
     0% {
         opacity: 0;
@@ -237,10 +291,12 @@ Mouse SCROLL ANIMATION
 
 @keyframes mapCircleLoading {
     from {
-        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
     }
     to {
-        transform: rotate(359deg);
+        -webkit-transform: rotate(359deg);
+                transform: rotate(359deg);
     }
 }
 
